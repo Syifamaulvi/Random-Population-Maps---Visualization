@@ -3,9 +3,10 @@ In this section, random population location points will be generated using Pytho
 
 ## Concept
 Dot map: each point represents one (or a few) individuals/events. Great for showing where things happen and detecting spatial patterns or gaps.
+
 Data you need:
-  A boundary polygon of the area in GeoJSON/GeoPackage (Theres a Bandung Maps via GeoJSON)
-  A point table with coordinates (Longitude, Latitude) in WGS84 (EPSG:4326).
+A boundary polygon of the area in GeoJSON/GeoPackage (Theres a Bandung Maps via GeoJSON)
+A point table with coordinates (Longitude, Latitude) in WGS84 (EPSG:4326).
 
 ## Environment & files
 pip install geopandas shapely matplotlib pandas
