@@ -21,10 +21,6 @@ import pandas as pd
 ### 1) Bandung boundary
 bandung_boundary = gpd.read_file('Bandung_Boundary.geojson')
 
-### Normalize to WGS84 if needed
-if bandung_boundary.crs is None or bandung_boundary.crs.to_epsg() != 4326:
-    bandung_boundary = bandung_boundary.to_crs(epsg=4326)
-
 ### 2) Points from CSV → GeoDataFrame
 df_random_points = pd.read_csv('A_Populasi_2341.csv')  # columns: Longitude, Latitude
 gdf_random_points = gpd.GeoDataFrame(
